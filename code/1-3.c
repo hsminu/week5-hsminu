@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void print_reverse(int *arr, int size) {
+    for(int i=0; i<size - 1; i++){
+        printf("%d ", *(arr + (size - i - 1)));
+    }
+
+    printf("%d", *(arr));
+}
+
+int main() {
+    int nums[] = {1,2,3,4,5};
+
+    print_reverse(nums, 5);
+    printf("\n");
+
+    return 0;
+}
